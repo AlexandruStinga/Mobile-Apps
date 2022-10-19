@@ -1,0 +1,38 @@
+Description:
+
+This application is an inventory management tool. A shop can use it to keep track of its stock. 
+The application lets you add new items to the stock by specifying their names, price, location, number of items in the 
+stock and upload a photo of the item. You can also edit any of the items’ properties and delete an item if it’s not 
+needed anymore.
+
+Domain details: 
+
+name - the name of the item e.g. Samsung Galaxy S22
+location - the location of the shop in which you can find the item e.g. Cluj
+stock - the number of those items in the stock e.g. 3 
+price - the price of the item
+image - an image of the item
+
+CRUD details: 
+
+create - an entity can be created by pressing the + button on the main screen. it will bring you to another screen with 
+4 fields and 2 buttons. the 4 fields correspond to the name, location, stock and price. one of the buttons is the button that
+you press to upload a photo and the other button adds the item to the list.
+
+read - all the items are listed on the main screen
+
+update - pressing an item brings you to a screen similar to the create one, with 4 fields completed with the existing 
+information, and 2 buttons, one to upload a photo and one to edit the item
+
+delete - swiping an item to the right on the main screen will delete the item
+
+Persistance details: 
+
+create, update, delete will be persisted on the server and local db
+read will fetch data from the server and local db
+
+When device is offline:
+
+On update and delete a message will be displayed that the operation could not be completed
+On read - the content from the local db will be displayed, with a warning that the connection is down
+On create - the item will be persisted in the local db and when the device connects to the internet, the item will be pushed on the server
