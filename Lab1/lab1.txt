@@ -36,3 +36,5 @@ When device is offline:
 On update and delete a message will be displayed that the operation could not be completed
 On read - the content from the local db will be displayed, with a warning that the connection is down
 On create - the item will be persisted in the local db and when the device connects to the internet, the item will be pushed on the server
+
+Link to figma: https://www.figma.com/file/tVSvIZ3VIeEZFQwktYTGlE/Inventory-Management-App
